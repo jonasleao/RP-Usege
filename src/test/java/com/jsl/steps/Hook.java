@@ -6,7 +6,8 @@ import io.cucumber.java.Before;
 
 public class Hook {
 
-    public Hook() { }
+    public Hook() {
+    }
 
     @Before
     public void setUp(Scenario scenario) {

@@ -28,6 +28,6 @@ Feature: Example WIP
     Then Eg2: the Selenium official page is show <pageTitle>
 
     Examples:
-      | firstName | secondName | lestName | pageTitle                         |
-      | Selenium  | Web        | Driver   | Selenium WebDriver                |
+      | firstName | secondName | lestName | pageTitle          |
+      | Selenium  | Web        | Driver   | Selenium WebDriver |
 #      | Selenium  | hq         |          | Selenium - Web Browser Automation |
