@@ -29,29 +29,34 @@
     </repositories>
 
     <dependencies>
-
+        <!--reportportal Logs -->
         <dependency>
             <groupId>com.epam.reportportal</groupId>
-            <artifactId>agent-java-testng</artifactId>
-            <version>5.0.0-BETA-6</version>
-            <!--            <type>pom</type>-->
+            <artifactId>logger-java-logback</artifactId>
+            <version>5.0.0-BETA-4</version>
         </dependency>
-
         <dependency>
-            <groupId>com.epam.reportportal</groupId>
-            <artifactId>logger-java-log4j</artifactId>
-            <version>5.0.0-BETA-2</version>
-            <!--            <type>pom</type>-->
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
         </dependency>
+        <!-- /reportportal Logs -->
 
-
+        <!-- cucumber4 ReportPortal Agent -->
         <dependency>
             <groupId>com.epam.reportportal</groupId>
             <artifactId>agent-java-cucumber4</artifactId>
             <version>5.0.0-BETA-1</version>
-            <!--            <type>pom</type>-->
         </dependency>
+        <!-- /Cucumber4 ReportPortal Agent -->
+
+
         <!--CUCUMBER DEPENDENCIES-->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>5.1.0</version>
+        </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-core</artifactId>
@@ -72,14 +77,20 @@
             <artifactId>cucumber-picocontainer</artifactId>
             <version>${cucumber.version}</version>
         </dependency>
+        <!--/CUCUMBER DEPENDENCIES-->
 
 
+        <!-- TestNg ReportPortal Agent -->
         <!--        <dependency>-->
-        <!--            <groupId>io.cucumber</groupId>-->
-        <!--            <artifactId>gherkin</artifactId>-->
-        <!--            <version>5.1.0</version>-->
+        <!--            <groupId>com.epam.reportportal</groupId>-->
+        <!--            <artifactId>agent-java-testng</artifactId>-->
+        <!--            <version>5.0.0-BETA-6</version>-->
         <!--        </dependency>-->
-
+        <!--        <dependency>-->
+        <!--            <groupId>com.epam.reportportal</groupId>-->
+        <!--            <artifactId>logger-java-log4j</artifactId>-->
+        <!--            <version>5.0.0-BETA-2</version>-->
+        <!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -104,7 +115,6 @@
                     <argLine>-Xms512m -Xmx512m</argLine>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 </project>
